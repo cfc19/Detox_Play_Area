@@ -2,7 +2,7 @@
 Play area to learn about detox
 
 # Env setup 
-Enusre you have the following 
+Ensure you have the following 
 * Homebrew
 * Node js
 * xcode 
