@@ -16,6 +16,7 @@ import {
   Text,
   useColorScheme,
   View,
+  TextInput,
 } from 'react-native';
 
 import {
@@ -74,6 +75,17 @@ const App: () => Node = () => {
             Edit <Text style={styles.highlight}>App.js</Text> to change this
             screen and then come back to see your edits.
           </Section>
+          <TextInput
+            // testID="MyUniqueId123"
+            // eslint-disable-next-line react-native/no-inline-styles
+            style={{
+              height: 40,
+              borderColor: 'gray',
+              borderWidth: 1,
+            }}
+            testID="MyUniqueId123"
+            defaultValue="You can type in me"
+          />
           <Section title="See Your Changes">
             <ReloadInstructions />
           </Section>

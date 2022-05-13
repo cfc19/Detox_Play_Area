@@ -20,8 +20,16 @@ describe('Example', () => {
   it('should have the debug section', async () => {
     await expect(element(by.text('Debug'))).toBeVisible();
   });
-  // it('should show world screen after tap', async () => {
-  //   await element(by.id('world_button')).tap();
-  //   await expect(element(by.text('World!!!'))).toBeVisible();
-  // });
+  it('should show a text box', async () => {
+    await expect(element(by.id('MyUniqueId123'))).toBeVisible();
+    // await element(by.id('MyUniqueId123')).scrollToInde;
+    await element(by.id('MyUniqueId123')).clearText();
+    await element(by.id('MyUniqueId123')).typeText('Hello');
+    // await expect(element(by.text('World!!!'))).toBeVisible();
+  });
+
+  it('should swipe to the bottom of the app', async () => {
+    // await waitFor(element(by.id('MyUniqueId123')).scroll(100, 'down')
+    await element(by.text('Step One')).swipe('up', 'fast');
+  });
 });
